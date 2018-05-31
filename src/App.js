@@ -18,8 +18,13 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>
+          <strong>Note:</strong> by default the bar will come back even with a cookie set, remove "debug=&#123;true&#125;" in App.js to enable the real bar behavior.
+        </p>
+
         <CookieConsent
           onAccept={() => {alert("yay!")}}
+          debug={true}
         >
           This website uses cookies to enhance the user experience.{" "}
           <span style={{ fontSize: "10px" }}>
