@@ -25,6 +25,9 @@ class App extends Component {
         <CookieConsent
           onAccept={() => {alert("yay!")}}
           debug={true}
+          enableDeclineButton
+          declineButtonText="Decline (optional)"
+          onDecline={() => {alert("nay!")}}
         >
           This website uses cookies to enhance the user experience.{" "}
           <span style={{ fontSize: "10px" }}>
