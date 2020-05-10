@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "https://mastermindzh.github.io/react-cookie-consent",
   "dependencies": {
-    "react": "^16.4.0",
-    "react-cookie-consent": "^2.3.0",
-    "react-dom": "^16.4.0",
+    "react": "^16.8.6",
+    "react-cookie-consent": "^4.0.0",
+    "react-dom": "^16.13.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {

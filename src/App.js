@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import CookieConsent, { Cookies } from "react-cookie-consent";
 
 class App extends Component {
-
   render() {
-
-    Cookies.set("test", "nice")
+    Cookies.set("test", "nice");
 
     return (
       <div className="App">
@@ -19,15 +17,21 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <strong>Note:</strong> by default the bar will come back even with a cookie set, remove "debug=&#123;true&#125;" in App.js to enable the real bar behavior.
+          <strong>Note:</strong> by default the bar will come back even with a
+          cookie set, remove "debug=&#123;true&#125;" in App.js to enable the
+          real bar behavior.
         </p>
 
         <CookieConsent
-          onAccept={() => {alert("yay!")}}
+          onAccept={() => {
+            alert("yay!");
+          }}
           debug={true}
           enableDeclineButton
           declineButtonText="Decline (optional)"
-          onDecline={() => {alert("nay!")}}
+          onDecline={() => {
+            alert("nay!");
+          }}
         >
           This website uses cookies to enhance the user experience.{" "}
           <span style={{ fontSize: "10px" }}>
