@@ -2,6 +2,7 @@ import * as React from "react";
 import Cookies from "js-cookie";
 
 export interface CookieConsentProps {
+  buttonWrapperClasses?: object;
   location?: "top" | "bottom" | "none";
   sameSite?: "strict" | "lax" | "none";
   cookieSecurity?: boolean;
